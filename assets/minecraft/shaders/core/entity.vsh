@@ -50,8 +50,8 @@ layout(location = 7) out vec2 texCoordGlint;
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
-    sphericalVertexDistance = fog_spherical_distance(Position);
-    cylindricalVertexDistance = fog_cylindrical_distance(Position);
+    sphericalVertexDistance = fog_spherical_distance(Position) * 0.50;
+    cylindricalVertexDistance = fog_cylindrical_distance(Position) * 0.50;
 
 #ifdef PER_FACE_LIGHTING
     vec2 light = minecraft_compute_light(Light0_Direction, Light1_Direction, Normal);

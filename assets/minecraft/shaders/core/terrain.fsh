@@ -43,6 +43,10 @@ void main() {
     }
     #endif
 
+    if (color.a < 0.99) {
+        color.a *= 0.70;
+    }
+
     #ifdef OIT_ALPHA_ONLY
     executeAlphaOnlyPhase(gl_FragCoord.z, color.a);
     #else

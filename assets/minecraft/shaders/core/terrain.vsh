@@ -33,8 +33,8 @@ void main() {
     vec3 pos = Position + (ChunkPosition - CameraBlockPos) + CameraOffset;
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
 
-    sphericalVertexDistance = fog_spherical_distance(pos);
-    cylindricalVertexDistance = fog_cylindrical_distance(pos);
+    sphericalVertexDistance = fog_spherical_distance(pos) * 0.50;
+    cylindricalVertexDistance = fog_cylindrical_distance(pos) * 0.50;
     #ifndef OIT_ALPHA_ONLY
     vertexColor = Color * sample_lightmap(Sampler2, UV2);
     #else

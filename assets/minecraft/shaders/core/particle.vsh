@@ -21,8 +21,8 @@ layout(location = 3) out vec4 vertexColor;
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
-    sphericalVertexDistance = fog_spherical_distance(Position);
-    cylindricalVertexDistance = fog_cylindrical_distance(Position);
+    sphericalVertexDistance = fog_spherical_distance(Position) * 0.50;
+    cylindricalVertexDistance = fog_cylindrical_distance(Position) * 0.50;
     texCoord0 = UV0;
     vertexColor = Color * sample_lightmap(Sampler2, UV2);
 }
