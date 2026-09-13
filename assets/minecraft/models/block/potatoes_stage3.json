@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/stages_full",
+  "textures": {
+    "crop": "minecraft:block/potatoes_stage3"
+  }
+}
