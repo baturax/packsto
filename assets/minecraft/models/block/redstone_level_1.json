@@ -1,0 +1,6 @@
+{
+  "parent": "block/redstone_d_template",
+  "textures": {
+    "power": "block/redstone_level_1"
+}
+}
