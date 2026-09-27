@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ore_emis_template",
+  "textures": {
+    "particle": "minecraft:block/nether_gold_ore",
+    "base": "minecraft:block/nether_gold_ore"
+  }
+}

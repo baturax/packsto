@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ore_emis_template",
+  "textures": {
+    "particle": "minecraft:block/coal_ore",
+    "base": "minecraft:block/coal_ore"
+  }
+}

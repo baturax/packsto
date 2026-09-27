@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ore_emis_template",
+  "textures": {
+    "particle": "minecraft:block/emerald_ore",
+    "base": "minecraft:block/emerald_ore"
+  }
+}
